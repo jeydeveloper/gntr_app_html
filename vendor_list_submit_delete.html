@@ -64,6 +64,7 @@
 <div class="main">
   <div class="main-inner">
     <div class="container">
+      <p id="notice_info" class="bg-danger pad-10 text-center">Data berhasil dihapus</p>
       <div class="row">
         <div class="span2">
           <div class="widget">
@@ -148,15 +149,6 @@
                     <td> perusahaan_4@email.com </td>
                     <td class="td-actions"><a href="vendor_edit.html" class="btn btn-small btn-success" title="edit"><i class="btn-icon-only icon-pencil"> </i></a><a href="vendor_list_submit_delete.html" class="btn btn-danger btn-small" title="delete"><i class="btn-icon-only icon-remove"> </i></a></td>
                   </tr>
-                  <tr>
-                    <td> 5 </td>
-                    <td> Perusahaan 5 </td>
-                    <td> Jakarta 5 </td>
-                    <td> CP 5 </td>
-                    <td> +628xxxxx </td>
-                    <td> perusahaan_5@email.com </td>
-                    <td class="td-actions"><a href="vendor_edit.html" class="btn btn-small btn-success" title="edit"><i class="btn-icon-only icon-pencil"> </i></a><a href="vendor_list_submit_delete.html" class="btn btn-danger btn-small" title="delete"><i class="btn-icon-only icon-remove"> </i></a></td>
-                  </tr>
                 
                 </tbody>
               </table>
@@ -193,5 +185,10 @@
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="assets/js/jquery-1.7.2.min.js"></script> 
 <script src="assets/js/bootstrap.js"></script>
+<script type="text/javascript">
+  setTimeout(function() {
+    $('#notice_info').hide();
+  }, 2000);
+</script>
 </body>
 </html>

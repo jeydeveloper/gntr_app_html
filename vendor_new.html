@@ -100,12 +100,12 @@
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
-              <form action="#" method="post">
+              <form action="vendor_list_submit_new.html" method="post">
                 
                 <div class="form-fields">
                   
                   <div class="field">
-                    <label for="name">Nama:</label>
+                    <label for="name">Nama Perusahaan:</label>
                     <input id="name" name="name" value="" placeholder="Name" />
                   </div> <!-- /field -->
                   
@@ -116,8 +116,13 @@
                   
                   
                   <div class="field">
-                    <label for="phone">No Telp:</label>
-                    <input id="phone" name="phone" value="" placeholder="No Telp"/>
+                    <label for="cp">Contact Person</label>
+                    <input id="cp" name="cp" value="" placeholder="Contact Person"/>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="telpon">Telpon:</label>
+                    <textarea id="telpon" name="telpon" value="" placeholder="Telpon"></textarea>
                   </div> <!-- /field -->
                   
                   <div class="field">
@@ -126,8 +131,8 @@
                   </div> <!-- /field -->
                   
                   <div class="field">
-                    <label for="note">Keterangan:</label>
-                    <textarea id="note" name="note" value="" placeholder="Keterangan"></textarea>
+                    <label for="status">Tidak Aktif?</label>
+                    <input type="checkbox" name="status" value="1" />
                   </div> <!-- /field -->
                   
                 </div> <!-- /form-fields -->

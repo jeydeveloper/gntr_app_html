@@ -78,6 +78,8 @@ form{
 	margin: 0;
 }
 
+.form-fields input[type="checkbox"]{width: auto;}
+
 @media (max-width: 480px) {
 	
 }

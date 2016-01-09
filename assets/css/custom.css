@@ -5,3 +5,23 @@
 .login-actions {
 	margin-bottom: 0;
 }
+
+.bg-success {
+    background-color: #dff0d8;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pad-10 {
+    padding: 15px;
+}
+
+.bg-danger {
+    background-color: #f2dede;
+}
+
+.bg-warning {
+    background-color: #fcf8e3;
+}

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>New Client - Aplikasi Jual Beli</title>
+<title>Edit Client - Aplikasi Jual Beli</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -55,12 +55,12 @@
         <li><a href="karyawan_list.html"><i class="icon-user"></i><span>Karyawan</span></a></li>
         <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-male"></i><span>Manajemen User</span> <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="pengguna.html">Pengguna</a></li>
-            <li><a href="wajib_pajak.html">Data Wajib Pajak Pribadi & Badan</a></li>
-            <li><a href="user_level.html">User Level</a></li>
-                  <!-- <li><a href="login.html">Login</a></li>
-                  <li><a href="signup.html">Signup</a></li>
-                  <li><a href="error.html">404</a></li> -->
+            <li><a href="icons.html">Pengguna</a></li>
+            <li><a href="faq.html">Data Wajib Pajak Pribadi & Badan</a></li>
+            <li><a href="pricing.html">User Level</a></li>
+            <!-- <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="error.html">404</a></li> -->
           </ul>
         </li>
         <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-bar-chart"></i><span>Laporan</span> <b class="caret"></b></a>
@@ -88,14 +88,14 @@
             <!-- /widget-header -->
             <div class="widget-content">
               <div class="shortcuts"> 
-                <a href="client_list.html" class="shortcut" style="width: 100%;">
+                <a href="vendor_list.html" class="shortcut" style="width: 100%;">
                   <i class="shortcut-icon icon-list-alt"></i>
                   <span class="shortcut-label">List</span> 
                 </a>
               </div>
               <!-- /shortcuts -->
               <div class="shortcuts"> 
-                <a href="client_new.html" class="shortcut" style="width: 100%;">
+                <a href="vendor_new.html" class="shortcut" style="width: 100%;">
                   <i class="shortcut-icon icon-file"></i>
                   <span class="shortcut-label">New</span> 
                 </a>
@@ -110,38 +110,38 @@
         <div class="span10">
           <div class="widget">
             <div class="widget-header"> <i class="icon-th-list"></i>
-              <h3>Form</h3>
+              <h3>Form Edit</h3>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
-              <form action="client_list_submit_new.html" method="post">
+              <form action="client_list_submit_edit.html" method="post">
                 
                 <div class="form-fields">
                   
                   <div class="field">
                     <label for="name">Nama Client:</label>
-                    <input id="name" name="name" value="" placeholder="Name" />
+                    <input id="name" name="name" value="Client 1" placeholder="Name" />
                   </div> <!-- /field -->
                   
                   <div class="field">
                     <label for="address">Alamat:</label>  
-                    <textarea id="address" name="address" value="" placeholder="Alamat"></textarea>
+                    <textarea id="address" name="address" placeholder="Alamat">Jakarta 1</textarea>
                   </div> <!-- /field -->
                   
                   
                   <div class="field">
                     <label for="cp">Contact Person</label>
-                    <input id="cp" name="cp" value="" placeholder="Contact Person"/>
+                    <input id="cp" name="cp" value="CP 1" placeholder="Contact Person"/>
                   </div> <!-- /field -->
 
                   <div class="field">
                     <label for="telpon">Telpon:</label>
-                    <textarea id="telpon" name="telpon" value="" placeholder="Telpon"></textarea>
+                    <input id="telpon" name="telpon" value="+628xxxxx" placeholder="Telpon"/>
                   </div> <!-- /field -->
                   
                   <div class="field">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" value="" placeholder="Email"/>
+                    <input type="email" id="email" name="email" value="perusahaan_1@email.com" placeholder="Email"/>
                   </div> <!-- /field -->
                   
                   <div class="field">
@@ -192,5 +192,8 @@
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="assets/js/jquery-1.7.2.min.js"></script> 
 <script src="assets/js/bootstrap.js"></script>
+<script type="text/javascript">
+  
+</script>
 </body>
 </html>

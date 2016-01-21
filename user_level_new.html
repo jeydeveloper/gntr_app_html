@@ -92,14 +92,14 @@
             <!-- /widget-header -->
             <div class="widget-content">
               <div class="shortcuts"> 
-                <a href="#" class="shortcut" style="width: 100%;">
+                <a href="user_level.html" class="shortcut" style="width: 100%;">
                   <i class="shortcut-icon icon-list-alt"></i>
                   <span class="shortcut-label">List</span> 
                 </a>
               </div>
               <!-- /shortcuts -->
               <div class="shortcuts"> 
-                <a href="user_level_new.html" class="shortcut" style="width: 100%;">
+                <a href="pengguna_new.html" class="shortcut" style="width: 100%;">
                   <i class="shortcut-icon icon-file"></i>
                   <span class="shortcut-label">New</span> 
                 </a>
@@ -114,36 +114,34 @@
         <div class="span10">
           <div class="widget">
             <div class="widget-header"> <i class="icon-th-list"></i>
-              <h3>Daftar User Level</h3>
+              <h3>Form Edit</h3>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
-              <table class="table table-striped table-bordered">
-                <thead>
-                  <tr>
-                    <th width="30"> No. </th>
-                    <th> Level </th>
-                    <th class="td-actions"> Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td> 1 </td>
-                    <td> Admin </td>
-                    <td class="td-actions"><a href="pengguna_edit.html" class="btn btn-small btn-success" title="edit"><i class="btn-icon-only icon-pencil"> </i></a><a href="pengguna_delete.html" class="btn btn-danger btn-small" title="delete"><i class="btn-icon-only icon-remove"> </i></a></td>
-                  </tr>
-                  <tr>
-                    <td> 2 </td>
-                    <td> Manager </td>
-                    <td class="td-actions"><a href="pengguna_edit.html" class="btn btn-small btn-success" title="edit"><i class="btn-icon-only icon-pencil"> </i></a><a href="pengguna_delete.html" class="btn btn-danger btn-small" title="delete"><i class="btn-icon-only icon-remove"> </i></a></td>
-                  </tr>
-                  <tr>
-                    <td> 3 </td>
-                    <td> Staff </td>
-                    <td class="td-actions"><a href="pengguna_edit.html" class="btn btn-small btn-success" title="edit"><i class="btn-icon-only icon-pencil"> </i></a><a href="pengguna_delete.html" class="btn btn-danger btn-small" title="delete"><i class="btn-icon-only icon-remove"> </i></a></td>
-                  </tr>
-                </tbody>
-              </table>
+              <form action="vendor_list_submit_edit.html" method="post">
+                
+                <div class="form-fields">
+                  
+                  <div class="field">
+                    <label for="name">No.</label>
+                    <input id="name" name="name" value="No." placeholder="No" />
+                  </div> <!-- /field -->
+                  
+                  <div class="field">
+                    <label for="cp">Level</label>
+                    <input id="cp" name="cp" value="level" placeholder="Level"/>
+                  </div> <!-- /field -->
+                                
+                </div> <!-- /form-fields -->
+                
+                <div class="form-actions">
+                  <div class="pull-right">
+                    <button type="reset" class="button btn btn-default btn-large">Reset</button>
+                    <button class="button btn btn-primary btn-large">Submit</button>
+                  </div>
+                </div> <!-- .actions -->
+                
+              </form>
             </div>
             <!-- /widget-content --> 
           </div>

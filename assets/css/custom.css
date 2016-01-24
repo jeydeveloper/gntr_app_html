@@ -26,6 +26,10 @@
     background-color: #fcf8e3;
 }
 
+.widget-content {padding: 10px;}
+
+.shortcuts .shortcut{margin-bottom: 5px;}
+
 @media (min-width: 1200px) {
 	.span6.dashboard {
 	    width: 470px;

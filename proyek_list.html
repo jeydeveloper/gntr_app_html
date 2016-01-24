@@ -114,6 +114,12 @@
                   <span class="shortcut-label">Barang</span> 
                 </a>
               </div>
+              <div class="shortcuts"> 
+                <a href="#" class="shortcut" style="width: 100%;" id="next_menu">
+                  <i class="shortcut-icon icon-circle-arrow-right"></i>
+                  <span class="shortcut-label">Next</span> 
+                </a>
+              </div>
               <!-- /shortcuts --> 
             </div>
             <!-- /widget-content -->
@@ -281,6 +287,13 @@ $(function(){
     var prt = $(this).closest('.widget-content');
     prt.fadeOut('slow');
     $('.widget-content.satu').fadeIn('slow');
+  })
+
+  $('#next_menu').click(function(e){
+    e.preventDefault()
+    var prt = $(this).closest('.widget-content');
+    prt.fadeOut('medium');
+    $('.widget-content.dua').fadeIn('medium');
   })
 })
 </script>

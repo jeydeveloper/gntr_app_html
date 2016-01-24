@@ -47,7 +47,7 @@
   <div class="subnavbar-inner">
       <div class="container">
           <ul class="mainnav">
-              <li><a href="proyek_list.html"><i class="icon-road"></i><span>Proyek</span></a></li>
+              <li><a href="proyek_dashboard.html"><i class="icon-road"></i><span>Proyek</span></a></li>
               <li><a href="karyawan_list.html"><i class="icon-user"></i><span>Karyawan</span></a></li>
               <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-male"></i><span>Manajemen User</span> <b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -89,18 +89,11 @@
               <h3>Shortcuts</h3>
             </div>
             <!-- /widget-header -->
-            <div class="widget-content">
+            <div class="widget-content satu" style="display:none;">
               <div class="shortcuts"> 
                 <a href="proyek_list.html" class="shortcut" style="width: 100%;">
                   <i class="shortcut-icon icon-list-alt"></i>
-                  <span class="shortcut-label">List</span> 
-                </a>
-              </div>
-              <!-- /shortcuts -->
-              <div class="shortcuts"> 
-                <a href="proyek_new.html" class="shortcut" style="width: 100%;">
-                  <i class="shortcut-icon icon-file"></i>
-                  <span class="shortcut-label">New</span> 
+                  <span class="shortcut-label">Proyek</span> 
                 </a>
               </div>
               <div class="shortcuts"> 
@@ -119,6 +112,28 @@
                 <a href="barang_list.html" class="shortcut" style="width: 100%;">
                   <i class="shortcut-icon icon-hdd"></i>
                   <span class="shortcut-label">Barang</span> 
+                </a>
+              </div>
+              <!-- /shortcuts --> 
+            </div>
+            <!-- /widget-content -->
+            <div class="widget-content dua">
+              <div class="shortcuts"> 
+                <a href="barang_list.html" class="shortcut" style="width: 100%;">
+                  <i class="shortcut-icon icon-hdd"></i>
+                  <span class="shortcut-label">Barang</span> 
+                </a>
+              </div>
+              <div class="shortcuts"> 
+                <a href="barang_new.html" class="shortcut" style="width: 100%;">
+                  <i class="shortcut-icon icon-file"></i>
+                  <span class="shortcut-label">New</span> 
+                </a>
+              </div>
+              <div class="shortcuts"> 
+                <a href="#" class="shortcut" style="width: 100%;" id="back_menu">
+                  <i class="shortcut-icon icon-circle-arrow-left"></i>
+                  <span class="shortcut-label">Back</span> 
                 </a>
               </div>
               <!-- /shortcuts --> 
@@ -234,5 +249,15 @@
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="assets/js/jquery-1.7.2.min.js"></script> 
 <script src="assets/js/bootstrap.js"></script>
+<script type="text/javascript">
+$(function(){
+  $('#back_menu').click(function(e){
+    e.preventDefault()
+    var prt = $(this).closest('.widget-content');
+    prt.fadeOut('slow');
+    $('.widget-content.satu').fadeIn('slow');
+  })
+})
+</script>
 </body>
 </html>

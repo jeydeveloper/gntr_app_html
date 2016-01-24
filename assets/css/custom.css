@@ -25,3 +25,9 @@
 .bg-warning {
     background-color: #fcf8e3;
 }
+
+@media (min-width: 1200px) {
+	.span6.dashboard {
+	    width: 470px;
+	}
+}

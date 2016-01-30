@@ -1,0 +1,211 @@
+<html>
+<head>
+    <style type="text/css" media="all">
+    	* {
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+        @page {
+            size: A4 landscape; /* can use also 'landscape' for orientation */
+            margin: 0.2in;
+            border: thin solid black;
+            padding: 0.2inem;
+
+            @bottom-center {
+                content: element(footer);
+            }
+
+            @top-center {
+                content: element(header);
+            }
+        }
+
+        #page-header {
+            display: block;
+            position: running(header);
+        }
+
+        #page-footer {
+            display: block;
+            position: running(footer);
+        }
+
+        .page-number:before {
+            content: counter(page); 
+        }
+
+        .page-count:before {
+            content: counter(pages);  
+        }
+
+        table {
+		    border-collapse: collapse;
+		}
+
+		table, th, td {
+		    border: 1px solid black;
+		}
+
+		div, tr {
+			-webkit-print-color-adjust: exact; 
+		}
+
+		th, td {
+		    padding: 5px;
+		    text-align: left;
+		}
+
+		.remove-bottom-border {
+			border-bottom: 1px solid white;
+		}
+
+        .remove-bottom-border.add-bottom {
+            border-bottom: 1px solid black;   
+        }
+
+		tr.header-color th {
+			text-align:center;
+			background-color:blue;
+			color:white;
+		}
+
+		.row {
+			display: block;
+			margin-bottom:20px;
+		}
+
+		.ovrlw {
+			overflow:hidden;			
+		}
+
+		.brdr {
+			border: 1px solid;
+			padding: 5px; 
+		}
+
+		p, ul, ol, h3 {
+			margin: 0;
+		}
+
+        .ftr {
+            border:1px solid;
+            min-height:148px;
+        }
+
+        .lft {
+            float: left;
+        }
+
+        .rgt {
+            float: right;
+        }
+
+        .wd3 {
+            width: 300px;
+        }
+
+        .pd5 {
+            padding: 5px;
+        }
+
+        .pd10 {
+            padding: 10px;
+        }
+
+        .ftr h3 {
+            position:absolute;
+            right:0;
+            top:20px;
+        }
+
+        .rltv {
+            position: relative;
+        }
+
+        .cntr {
+            text-align:center;
+        }
+
+        .blck {
+            width:100%;
+        }
+
+        .numeric {
+            text-align: right;
+        }
+
+        .box {
+            border:1px solid;
+        }
+
+        .box.grey {
+            background: grey;
+            color: white;
+        }
+
+        .delimiter {
+            width: 80px;
+        }
+
+        table.no-border, table.no-border th, table.no-border td {
+            border: none;
+        }
+
+        .logo-side {
+            margin-left: 150px;
+        }
+
+        .srt-jln {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page-content">
+        <div class="row blck ovrlw">
+            <div class="lft ovrlw">
+                <div class="box pd10 lft cntr">LOGO HERE</div>
+                <div class="logo-side">
+                    <p>PT. PUTRA BAHARI MANDIRI</p>
+                    <p>JL. PLTGU Muara Tawar RT/RW 002/013<br/>Desa xyz, Kec. Taruma, Bekasi 17212<br/>Tlp. (021)<br/>Email : putrabaharimandiri@yahoo.co.id</p>
+                </div>
+            </div>
+            <div class="rgt">
+                <p>Bekasi, 03-10-2015</p>
+                <p>Kepada : PT JGC Indonesia</p>
+            </div>
+        </div>
+        <div class="row blck">
+            <p class="srt-jln">SURAT JALAN No. Kendaraan : B 9410 ZC</p>
+        </div>
+        <div class="row blck">
+            <table class="blck">
+                <thead>
+                    <tr>
+                        <th>Banyaknya</th>
+                        <th>Nama Barang</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 Unit Truk</td>
+                        <td>Gravel 2 - 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row blck ovrlw">
+            <div class="lft ovrlw cntr">
+                <p>Tanda Terima<br/><br/><br/><br/>(Nama Penerima)</p>
+            </div>
+            <div class="rgt cntr">
+                <p>Hormat Kami,<br/><br/><br/><br/>(Nama Hormat)</p>
+            </div>
+        </div>
+        <!--<p style="page-break-after:always;"/>-->
+    </div>
+</body>
+</html>

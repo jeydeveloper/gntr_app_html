@@ -1,0 +1,285 @@
+<html>
+<head>
+    <style type="text/css" media="all">
+    	* {
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+        @page {
+            size: A4 portrait; /* can use also 'landscape' for orientation */
+            margin: 0.2in;
+            border: thin solid black;
+            padding: 0.2inem;
+
+            @bottom-center {
+                content: element(footer);
+            }
+
+            @top-center {
+                content: element(header);
+            }
+        }
+
+        #page-header {
+            display: block;
+            position: running(header);
+        }
+
+        #page-footer {
+            display: block;
+            position: running(footer);
+        }
+
+        .page-number:before {
+            content: counter(page); 
+        }
+
+        .page-count:before {
+            content: counter(pages);  
+        }
+
+        table {
+		    border-collapse: collapse;
+		}
+
+		table, th, td {
+		    border: 1px solid black;
+		}
+
+		div, tr {
+			-webkit-print-color-adjust: exact; 
+		}
+
+		th, td {
+		    padding: 5px;
+		    text-align: left;
+		}
+
+		.remove-bottom-border {
+			border-bottom: 1px solid white;
+		}
+
+        .remove-bottom-border.add-bottom {
+            border-bottom: 1px solid black;   
+        }
+
+		tr.header-color th {
+			text-align:center;
+			background-color:blue;
+			color:white;
+		}
+
+		.row {
+			display: block;
+			margin-bottom:20px;
+		}
+
+		.ovrlw {
+			overflow:hidden;			
+		}
+
+		.brdr {
+			border: 1px solid;
+			padding: 5px; 
+		}
+
+		p, ul, ol, h3 {
+			margin: 0;
+		}
+
+        .ftr {
+            border:1px solid;
+            min-height:148px;
+        }
+
+        .lft {
+            float: left;
+        }
+
+        .rgt {
+            float: right;
+        }
+
+        .wd3 {
+            width: 300px;
+        }
+
+        .pd5 {
+            padding: 5px;
+        }
+
+        .pd10 {
+            padding: 10px;
+        }
+
+        .ftr h3 {
+            position:absolute;
+            right:0;
+            top:20px;
+        }
+
+        .rltv {
+            position: relative;
+        }
+
+        .cntr {
+            text-align:center;
+        }
+
+        .blck {
+            width:100%;
+        }
+
+        .numeric {
+            text-align: right;
+        }
+
+        .box {
+            border:1px solid;
+        }
+
+        .box.grey {
+            background: grey;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page-content">
+        <div class="row ovrlw">
+            <div class="box grey rgt cntr pd10">
+                <p>INVOICE</p>
+            </div>
+        </div>
+        <div class="row ovrlw">
+        	<div class="box lft pd5">
+        		<h3>TO : PT. JGC INDONESIA</h3>
+        		<p>Jl. TB. Simatupang No. 7-B, Cilandak<br/>Jakarta Selatan 12430, Indonesia<br/>Phone : 62 - 21-2997.6500. Fax: 62-21-2997.6599<br/>E-mail : indo@jgc-indonesia.com</p>
+        	</div>
+        	<div class="rgt">
+        		<table>
+        			<tbody>
+        				<tr>
+        					<td>Invoice No :</td>
+        					<td>0103/INV-XII/2015</td>
+        				</tr>
+                        <tr>
+                            <td>Tanggal :</td>
+                            <td>21 Desember 2015</td>
+                        </tr>
+                        <tr>
+                            <td>WO No :</td>
+                            <td>PO-0660-JIND/PBM-001</td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal :</td>
+                            <td>07 Desember 2015</td>
+                        </tr>
+                        <tr>
+                            <td>Penawaran NO :</td>
+                            <td>SPH-0105/SAB-IX/2015</td>
+                        </tr>
+        			</tbody>
+        		</table>
+        	</div>
+        </div>
+        <div class="row">
+        	<table class="blck">
+        		<thead>
+					<tr class="header-color">
+						<th>No</th>
+						<th>Description</th>
+						<th>Vol</th>
+						<th>Sat</th>
+						<th>Harga Satuan</th>
+						<th>Jumlah Harga</th>
+					</tr>
+        		</thead>
+        		<tbody>
+                    <tr>
+                        <td colspan="2">Sewa 1 Unit Backhoe Loader, 1 Unit Vibro & Dump Truck 7m3 + Mob Demob</td>
+                        <td colspan="4"></td>
+                    </tr>
+        			<tr>
+        				<td>1</td>
+        				<td>Blackhoe Loader</td>
+        				<td class="numeric">50,00</td>
+        				<td>Hours</td>
+        				<td class="numeric">398.000,00</td>
+        				<td class="numeric">Rp 19.900.000</td>
+        			</tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mob - Demob</td>
+                        <td class="numeric">1,00</td>
+                        <td>lot</td>
+                        <td class="numeric">2.500.000,00</td>
+                        <td class="numeric">Rp 2.500.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Vibro Roller 18 ton</td>
+                        <td class="numeric">50,00</td>
+                        <td>hours</td>
+                        <td class="numeric">400.000,00</td>
+                        <td class="numeric">Rp 20.000.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Mob - Demob</td>
+                        <td class="numeric">1,00</td>
+                        <td>lot</td>
+                        <td class="numeric">2.500.000,00</td>
+                        <td class="numeric">Rp 2.500.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Dump Truck 7m3</td>
+                        <td class="numeric">2,00</td>
+                        <td>day</td>
+                        <td class="numeric">1.450.000,00</td>
+                        <td class="numeric">Rp 2.900.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Ritase Dump Truck 7m3</td>
+                        <td class="numeric">15,00</td>
+                        <td>rit</td>
+                        <td class="numeric">200.000,00</td>
+                        <td class="numeric">Rp 3.000.000,00</td>
+                    </tr>
+        			<tr>
+        				<td colspan="5" class="remove-bottom-border numeric">Total</td>
+        				<td class="numeric">Rp 50.800.000</td>
+        			</tr>
+        			<tr>
+        				<td colspan="5" class="remove-bottom-border numeric">PPH 2%</td>
+        				<td class="numeric">Rp 1.016.000</td>
+        			</tr>
+        			<tr>
+        				<td colspan="5" class="remove-bottom-border add-bottom numeric">PPN 10%</td>
+        				<td class="numeric">Rp 5.080.000</td>
+        			</tr>
+        			<tr>
+        				<td colspan="5" class="numeric">TOTAL TAGIHAN</td>
+        				<td class="numeric">Rp 54.864.000</td>
+        			</tr>
+                    <tr>
+                        <td colspan="6">Terbilang<br/># Lima Puluh Empat Juta Delapan Ratus Enam Puluh Empat Ribu Rupiah #</td>
+                    </tr>
+        		</tbody>
+        	</table>
+        </div>
+        <div class="row ovrlw">
+        	<div class="ftr rgt pd10 cntr">
+        		<p>Bekasi, 09 Juni 2014<br/>Hormat Kami</p>
+        		<br/><br/><br/><br/>
+        		<p>Andri Lestari<br/>Direktur</p>
+        	</div>
+        </div>
+        <!--<p style="page-break-after:always;"/>-->
+    </div>
+</body>
+</html>

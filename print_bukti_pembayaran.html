@@ -1,0 +1,238 @@
+<html>
+<head>
+    <style type="text/css" media="all">
+    	* {
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+        @page {
+            size: A4 landscape; /* can use also 'landscape' for orientation */
+            margin: 0.2in;
+            border: thin solid black;
+            padding: 0.2inem;
+
+            @bottom-center {
+                content: element(footer);
+            }
+
+            @top-center {
+                content: element(header);
+            }
+        }
+
+        #page-header {
+            display: block;
+            position: running(header);
+        }
+
+        #page-footer {
+            display: block;
+            position: running(footer);
+        }
+
+        .page-number:before {
+            content: counter(page); 
+        }
+
+        .page-count:before {
+            content: counter(pages);  
+        }
+
+        table {
+		    border-collapse: collapse;
+		}
+
+		table, th, td {
+		    border: 1px solid black;
+		}
+
+		div, tr {
+			-webkit-print-color-adjust: exact; 
+		}
+
+		th, td {
+		    padding: 5px;
+		    text-align: left;
+		}
+
+		.remove-bottom-border {
+			border-bottom: 1px solid white;
+		}
+
+        .remove-bottom-border.add-bottom {
+            border-bottom: 1px solid black;   
+        }
+
+		tr.header-color th {
+			text-align:center;
+			background-color:blue;
+			color:white;
+		}
+
+		.row {
+			display: block;
+			margin-bottom:20px;
+		}
+
+		.ovrlw {
+			overflow:hidden;			
+		}
+
+		.brdr {
+			border: 1px solid;
+			padding: 5px; 
+		}
+
+		p, ul, ol, h3 {
+			margin: 0;
+		}
+
+        .ftr {
+            border:1px solid;
+            min-height:148px;
+        }
+
+        .lft {
+            float: left;
+        }
+
+        .rgt {
+            float: right;
+        }
+
+        .wd3 {
+            width: 300px;
+        }
+
+        .pd5 {
+            padding: 5px;
+        }
+
+        .pd10 {
+            padding: 10px;
+        }
+
+        .ftr h3 {
+            position:absolute;
+            right:0;
+            top:20px;
+        }
+
+        .rltv {
+            position: relative;
+        }
+
+        .cntr {
+            text-align:center;
+        }
+
+        .blck {
+            width:100%;
+        }
+
+        .numeric {
+            text-align: right;
+        }
+
+        .box {
+            border:1px solid;
+        }
+
+        .box.grey {
+            background: grey;
+            color: white;
+        }
+
+        .delimiter {
+            width: 80px;
+        }
+
+        table.no-border, table.no-border th, table.no-border td {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page-content">
+        <div class="row blck cntr">
+            <p>BUKTI PEMBAYARAN<br/>ORIFLAME</p>
+        </div>
+        <div class="row blck ovrlw">
+            <div class="lft">
+                <table class="no-border ">
+                    <tr>
+                        <td>TGL TRANSAKSI</td>
+                        <td class="delimiter">:</td>
+                        <td>01/05/2012</td>
+                    </tr>
+                    <tr>
+                        <td>NO TRANSAKSI</td>
+                        <td class="delimiter">:</td>
+                        <td>001</td>
+                    </tr>
+                    <tr>
+                        <td>KODE CABANG</td>
+                        <td class="delimiter">:</td>
+                        <td>0206</td>
+                    </tr>
+                    <tr>
+                        <td>NO REKENING</td>
+                        <td class="delimiter">:</td>
+                        <td>0206010000003509</td>
+                    </tr>
+                    <tr>
+                        <td>NAMA REKENING</td>
+                        <td class="delimiter">:</td>
+                        <td>NAMA REKENING</td>
+                    </tr>
+                    <tr>
+                        <td>NAMA KONSULTAN</td>
+                        <td class="delimiter">:</td>
+                        <td>XYZ</td>
+                    </tr>
+                    <tr>
+                        <td>NO INVOICE</td>
+                        <td class="delimiter">:</td>
+                        <td>001</td>
+                    </tr>
+                    <tr>
+                        <td>TOTAL TAGIHAN</td>
+                        <td class="delimiter">:</td>
+                        <td>IDR 250000</td>
+                    </tr>
+                    <tr>
+                        <td>TERBILANG</td>
+                        <td class="delimiter">:</td>
+                        <td>DUA RATUS LIMA PULUH RIBU RUPIAH</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="rgt">
+                <table class="no-border">
+                    <tr>
+                        <td>JAM TRANSAKSI</td>
+                        <td class="delimiter">:</td>
+                        <td>10:45:37</td>
+                    </tr>
+                    <tr>
+                        <td>CHANNEL</td>
+                        <td class="delimiter">:</td>
+                        <td>TELLER</td>
+                    </tr>
+                    <tr>
+                        <td>USER ID</td>
+                        <td class="delimiter">:</td>
+                        <td>0206051</td>
+                    </tr>
+                </table>    
+            </div>
+        </div>
+        <div class="row blck cntr">
+            <p>HARAP TANDA BUKTI INI DISIMPAN SEBAGAI TANDA PEMBAYARAN YANG SAH</p>
+        </div>
+        <!--<p style="page-break-after:always;"/>-->
+    </div>
+</body>
+</html>

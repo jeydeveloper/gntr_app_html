@@ -1,0 +1,272 @@
+<html>
+<head>
+    <style type="text/css" media="all">
+    	* {
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+        @page {
+            size: A4 portrait; /* can use also 'landscape' for orientation */
+            margin: 0.2in;
+            border: thin solid black;
+            padding: 0.2inem;
+
+            @bottom-center {
+                content: element(footer);
+            }
+
+            @top-center {
+                content: element(header);
+            }
+        }
+
+        #page-header {
+            display: block;
+            position: running(header);
+        }
+
+        #page-footer {
+            display: block;
+            position: running(footer);
+        }
+
+        .page-number:before {
+            content: counter(page); 
+        }
+
+        .page-count:before {
+            content: counter(pages);  
+        }
+
+        table {
+		    border-collapse: collapse;
+		}
+
+		table, th, td {
+		    border: 1px solid black;
+		}
+
+		tr {
+			-webkit-print-color-adjust: exact; 
+		}
+
+		th, td {
+		    padding: 5px;
+		    text-align: left;
+		}
+
+		.remove-side-border {
+			border-left: 1px solid white;
+			border-bottom: 1px solid white;
+		}
+
+		tr.header-color th {
+			text-align:center;
+			background-color:blue;
+			color:white;
+		}
+
+		.row {
+			display: block;
+			margin-bottom:20px;
+		}
+
+		.ovrlw {
+			overflow:hidden;			
+		}
+
+		.brdr {
+			border: 1px solid;
+			padding: 5px; 
+		}
+
+		p, ul, ol, h3 {
+			margin: 0;
+		}
+
+        .ftr {
+            border:1px solid;
+            min-height:148px;
+        }
+
+        .lft {
+            float: left;
+        }
+
+        .rgt {
+            float: right;
+        }
+
+        .wd3 {
+            width: 300px;
+        }
+
+        .pd5 {
+            padding: 5px;
+        }
+
+        .pd10 {
+            padding: 10px;
+        }
+
+        .ftr h3 {
+            position:absolute;
+            right:0;
+            top:20px;
+        }
+
+        .rltv {
+            position: relative;
+        }
+
+        .cntr {
+            text-align:center;
+        }
+
+        .blck {
+            width:100%;
+        }
+
+        .numeric {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page-content">
+        <div class="row ovrlw">
+        	<div class="lft">
+        		<h3>PT. WILDAN LESTARI</h3>
+        		<p>Bendungan Jago Jl. Melati. No. 1B. Kemayoran<br/>Jakarta Pusat Telp (021) 4265084<br/>085883939914 - 085216684116</p>
+        	</div>
+        	<div class="rgt">
+        		<table>
+        			<thead>
+        				<tr class="header-color">
+        					<th colspan="3">Purchase Order</th>
+        				</tr>
+        			</thead>
+        			<tbody>
+        				<tr>
+        					<td>DATE</td>
+        					<td>NUMBER</td>
+        					<td>PAGE</td>
+        				</tr>
+        				<tr>
+        					<td>19/06/2014</td>
+        					<td>00101</td>
+        					<td>1 of 1</td>
+        				</tr>
+        				<tr>
+        					<td>CURRENCY</td>
+        					<td colspan="2">VENDOR</td>
+        				</tr>
+        				<tr>
+        					<td>IDR</td>
+        					<td colspan="2">-</td>
+        				</tr>
+        				<tr>
+        					<td>PROJECT CODE</td>
+        					<td colspan="2">BUYER</td>
+        				</tr>
+        				<tr>
+        					<td>1312-C1</td>	
+        					<td colspan="2">Pater Suhandynata</td>
+        				</tr>
+        			</tbody>
+        		</table>
+        	</div>
+        </div>
+        <div class="row">
+        	<table class="blck">
+        		<thead>
+					<tr class="header-color">
+						<th>Line</th>
+						<th>Description</th>
+						<th>Vol</th>
+						<th>Sat</th>
+						<th>Harga Satuan</th>
+						<th>Total</th>
+					</tr>
+        		</thead>
+        		<tbody>
+        			<tr>
+        				<td>1</td>
+        				<td>Lime Stone</td>
+        				<td class="numeric">1,000.00</td>
+        				<td>M3</td>
+        				<td class="numeric">117,000.00</td>
+        				<td class="numeric">117,000,000.00</td>
+        			</tr>
+        			<tr>
+        				<td colspan="4" class="remove-side-border"></td>
+        				<td>Subtotal</td>
+        				<td class="numeric">117,000,000.00</td>
+        			</tr>
+        			<tr>
+        				<td colspan="4" class="remove-side-border"></td>
+        				<td>Vat/PPn</td>
+        				<td class="numeric">117,000,000.00</td>
+        			</tr>
+        			<tr>
+        				<td colspan="4" class="remove-side-border"></td>
+        				<td>Rounding</td>
+        				<td class="numeric">117,000,000.00</td>
+        			</tr>
+        			<tr>
+        				<td colspan="4" class="remove-side-border"></td>
+        				<td>Total</td>
+        				<td class="numeric">117,000,000.00</td>
+        			</tr>
+        		</tbody>
+        	</table>
+        </div>
+        <div class="row brdr">
+        	<p>Catatan/Notes:</p>
+        	<ul>
+        		<li>Material Dikirim Patrial Sesuai Info Proyek</li>
+        		<li>Material Dikirim Patrial Sesuai Info Proyek</li>
+        		<li>Material Dikirim Patrial Sesuai Info Proyek</li>
+        	</ul>
+        </div>
+        <div class="row brdr">
+        	<p>Lampiran/attachments Invoice</p>
+        	<ol>
+        		<li>Kwintasi atau Faktur bermaterai 6000 rupiah  jika total PO lebih dari Rp. 1000.000 atau  3000 rupiah  jika total PO kurang dari Rp. 1000.000</li>
+        		<li>Lampiran Faktur Pajak PPN / VAT ASLI</li>
+        		<li>
+        			<p>Faktur Pajak Ditujukan Kepada PT.  Putra Bahari Mandiri<br/>No. NPWP : 31.654.435.2-435.000<br/>Alamat       : Jl. PLTGU Muara Tawar RT/RW 002/013 Des. Pantai Makmur, Kec. Tarumajaya, Bekasi<br/><br/>Proses Pembayaran belum dapat dilakukan tanpa pemenuhan kelengkapan dokumen diatas.</p>
+        		</li>
+        	</ol>
+        </div>
+        <div class="row ovrlw">
+        	<div class="ftr lft pd5">
+        		<div class="rltv">
+        			<p>Purchase Order confirmation :</p>
+	        		<p>Payment Terms :</p>
+	        		<p>M1 - 1 Minggu Maksimal<br/><br/></p>
+	        		<h3>PT. WILDAN LESTARI</h3>	
+        		</div>
+        		<div>
+        			<div class="lft wd3">
+        				<p>Delivery Date :<br/>09/06/2014</p>
+        				<p>Delivery To : W1312-C1</p>
+        			</div>
+        			<div class="lft">
+        				<p>Signature : 09/06/2014</p>
+        				<p>Date : 20 Juni 2014</p>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="ftr rgt pd10 cntr">
+        		<p>Bekasi, 09 Juni 2014</p>
+        		<br/><br/><br/><br/>
+        		<p>Andri Lestari<br/>Direktur</p>
+        	</div>
+        </div>
+        <!--<p style="page-break-after:always;"/>-->
+    </div>
+</body>
+</html>

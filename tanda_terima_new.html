@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Kwitansi New - Aplikasi Keuangan PT. Putra Bahari Mandiri</title>
+<title>Tanda Terima New - Aplikasi Keuangan PT. Putra Bahari Mandiri</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -89,26 +89,19 @@
             <!-- /widget-header -->
             <div class="widget-content">
               <div class="shortcuts"> 
-                <a href="pembelian_list.html" class="shortcut" style="width: 100%;">
+                <a href="tanda_terima_list.html" class="shortcut" style="width: 100%;">
                   <i class="shortcut-icon icon-list-alt"></i>
                   <span class="shortcut-label">List</span> 
                 </a>
               </div>
               <!-- /shortcuts -->
               <div class="shortcuts"> 
-                <a href="pembelian_new.html" class="shortcut" style="width: 100%;">
+                <a href="#.html" class="shortcut" style="width: 100%;">
                   <i class="shortcut-icon icon-file"></i>
                   <span class="shortcut-label">New</span> 
                 </a>
               </div>
               <!-- /shortcuts --> 
-              <div class="shortcuts"> 
-                <a href="pembelian_grafik.html" class="shortcut" style="width: 100%;">
-                  <i class="shortcut-icon icon-bar-chart"></i>
-                  <span class="shortcut-label">Grafik</span> 
-                </a>
-              </div>
-              <!-- /shortcuts -->
             </div>
             <!-- /widget-content --> 
           </div>
@@ -118,7 +111,7 @@
         <div class="span10">
           <div class="widget">
             <div class="widget-header"> <i class="icon-th-list"></i>
-              <h3>Kwitansi</h3>
+              <h3>Tanda Terima</h3>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
@@ -132,39 +125,65 @@
                   </div> <!-- /field -->
                   
                   <div class="field">
-                    <label for="address">Diterima Dari</label>  
-                    <textarea id="address" name="address" value="" placeholder="Diterima Dari"></textarea>
-                  </div> <!-- /field -->
-                  
-                  
-                  <div class="field">
-                    <label for="phone">Jumlah</label>
-                    <input id="phone" name="phone" value="" placeholder="Jumlah"/>
+                    <label for="address">No. Proyek</label>  
+                    <input id="name" name="name" value="" placeholder="No.Proyek" />
                   </div> <!-- /field -->
                   
                   <div class="field">
-                    <label for="email">Untuk Pembayaran:</label>
-                    <input type="email" id="email" name="email" value="" placeholder="Untuk Pembayaran"/>
+                    <label for="phone">Tagihan Dari</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Subcontractor</label> 
+                    <label class="checkbox-inline"><input type="checkbox" value="">Supplier</label> 
+                    <label class="checkbox-inline"><input type="checkbox" value="">Lain Lain</label> 
+                    <label class="checkbox-inline"><input type="checkbox" value="">Telepon</label> 
+                    <label class="checkbox-inline"><input type="checkbox" value="">Fax</label>
+                    <input id="name" name="name" value="" placeholder="Tagihan Dari" />
+                  </div> <!-- /field -->
+                  
+                  <div class="field">
+                    <label for="phone">Nilai Tagihan</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Rp</label> 
+                    <label class="checkbox-inline"><input type="checkbox" value="">US$</label>
+                    <input id="name" name="name" value="" placeholder="Nilai Tagihan" />
                   </div> <!-- /field -->
 
                   <div class="field">
-                    <label for="note">Rekening Tujuan Pembayaran</label>
-                    <label class="radio-inline"><input type="radio" name="optradio">Bank BCA</label>
-                    <label class="radio-inline"><input type="radio" name="optradio">Bank BNI</label>
-                    <label class="radio-inline"><input type="radio" name="optradio">Bank Mandiri</label>
+                    <label for="note">Lampiran</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Kwitansi Asli</label> 
+                    <label class="checkbox-inline"><input type="checkbox" value="">Invoice Asli</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Faktur Pajak Asli</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Surat Jalan Asli</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Tanda Terima Asli + Quality Control Approval</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Purchase Order Asli/SPK</label>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="note">Lampiran</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Dikembalikan, untuk dimasukkan kembali tanggal<input id="name" name="name" value="" placeholder="tanggal" />karena lampiran tidak lengkap</label>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="address">No. BPKC</label>  
+                    <input id="name" name="name" value="" placeholder="No. BPKC" /></br>
+                    <input id="name" name="name" value="" placeholder="Tanggal" />
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="address">Yang menerima</label>  
+                    <input id="name" name="name" value="" placeholder="Yang menerima" /></br>
+                    <input id="name" name="name" value="" placeholder="Tanggal" />
                   </div> <!-- /field -->
 
                   <div class="field">
                     <label for="email">Upload File:</label>
                     <label for="exampleInputFile">File input</label>
                     <input type="file" class="form-control-file" id="exampleInputFile">
-                    <small class="text-muted">Upload hardcopy kwitansi.</small>
+                    <small class="text-muted">Upload hardcopy tanda terima.</small>
                   </div> <!-- /field -->
 
                   <div class="form-actions">
                   <div class="pull-right">
                     <button type="reset" class="button btn btn-default btn-large">Reset</button>
-                    <button class="button btn btn-primary btn-large"><a href="print_kwitansi.html"></a> Submit</button>
+                    <button class="button btn btn-primary btn-large"><a href="print_tanda_terima.html"></a> Submit</button>
                   </div>
                 </div> <!-- .actions -->
                   

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>New Vendor - Aplikasi Keuangan PT. Putra Bahari Mandiri</title>
+<title>Aktiva Tetap Baru - Aplikasi Keuangan PT. Putra Bahari Mandiri</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
-                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a><a class="brand" href="index.html">Aplikasi Keuangan PT. Putra Bahari Mandiri </a>
+                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a><a class="brand" href="index.html">Aplikasi Keuangan - PT. Putra Bahari Mandiri </a>
       <div class="nav-collapse">
         <ul class="nav pull-right">
           <li>
@@ -117,18 +117,17 @@
               <h3>Shortcuts</h3>
             </div>
             <!-- /widget-header -->
-            <div class="widget-content">
+            <div class="widget-content dua">
               <div class="shortcuts"> 
-                <a href="vendor_list.html" class="shortcut" style="width: 100%;">
+                <a href="daftar_aktiva_tetap.html" class="shortcut" style="width: 100%;">
                   <i class="shortcut-icon icon-list-alt"></i>
-                  <span class="shortcut-label">List</span> 
+                  <span class="shortcut-label">Daftar Aktiva Tetap</span> 
                 </a>
               </div>
-              <!-- /shortcuts -->
               <div class="shortcuts"> 
-                <a href="vendor_new.html" class="shortcut" style="width: 100%;">
-                  <i class="shortcut-icon icon-file"></i>
-                  <span class="shortcut-label">New</span> 
+                <a href="aktiva_tetap_baru.html" class="shortcut" style="width: 100%;">
+                  <i class="shortcut-icon icon-reply"></i>
+                  <span class="shortcut-label">Aktiva Tetap Baru</span> 
                 </a>
               </div>
               <!-- /shortcuts --> 
@@ -141,45 +140,71 @@
         <div class="span10">
           <div class="widget">
             <div class="widget-header"> <i class="icon-th-list"></i>
-              <h3>Form</h3>
+              <h3>Form Aktiva Tetap</h3>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
-              <form action="vendor_list_submit_new.html" method="post">
+              <form action="vendor_list_submit_edit.html" method="post">
                 
                 <div class="form-fields">
                   
                   <div class="field">
-                    <label for="name">Nama Perusahaan:</label>
-                    <input id="name" name="name" value="" placeholder="Name" />
+                    <label for="name">No.</label>
+                    <input id="name" name="name" value="No." placeholder="No" />
                   </div> <!-- /field -->
                   
                   <div class="field">
-                    <label for="address">Alamat:</label>  
-                    <textarea id="address" name="address" value="" placeholder="Alamat"></textarea>
+                    <label for="cp">Kode Aktiva</label>
+                    <input id="cp" name="cp" value="Kode Aktiva" placeholder="Kode Aktiva"/>
                   </div> <!-- /field -->
                   
                   
                   <div class="field">
-                    <label for="cp">Contact Person</label>
-                    <input id="cp" name="cp" value="" placeholder="Contact Person"/>
+                    <label for="cp">Keterangan</label>
+                    <input id="cp" name="cp" value="Keterangan" placeholder="Keterangan"/>
                   </div> <!-- /field -->
 
                   <div class="field">
-                    <label for="telpon">Telpon:</label>
-                    <textarea id="telpon" name="telpon" value="" placeholder="Telpon"></textarea>
+                    <label for="telpon">Tipe Aktiva</label>
+                    <input id="telpon" name="telpon" value="Tipe Aktiva" placeholder="Tipe Aktiva"/>
                   </div> <!-- /field -->
                   
                   <div class="field">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" value="" placeholder="Email"/>
+                    <label for="email">Biaya Aktiva</label>
+                    <input type="email" id="email" name="email" value="Biaya Aktiva" placeholder="Biaya Aktiva"/>
                   </div> <!-- /field -->
-                  
+
                   <div class="field">
-                    <label for="status">Tidak Aktif?</label>
-                    <input type="checkbox" name="status" value="1" />
+                    <label for="email">Tgl Pakai</label>
+                    <input type="email" id="email" name="email" value="Tgl Pakai" placeholder="Tgl Pakai"/>
                   </div> <!-- /field -->
-                  
+
+                  <div class="field">
+                    <label for="email">Tgl Beli</label>
+                    <input type="email" id="email" name="email" value="Tgl Beli" placeholder="Tgl Beli"/>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="email">Qty</label>
+                    <input type="email" id="email" name="email" value="Qty" placeholder="Qty"/>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="email">Umur Bulan Aktiva</label>
+                    <input type="email" id="email" name="email" value="Umur Bulan Aktiva" placeholder="Umur Bulan Aktiva"/>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="email">%Penyusut/Tahun</label>
+                    <input type="email" id="email" name="email" value="%Penyusut/Tahun" placeholder="%Penyusut/Tahun"/>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="email">Pajak</label>
+                    <input type="email" id="email" name="email" value="Pajak" placeholder="Pajak"/>
+                  </div> <!-- /field -->
+
+                                
                 </div> <!-- /form-fields -->
                 
                 <div class="form-actions">
@@ -223,5 +248,8 @@
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="assets/js/jquery-1.7.2.min.js"></script> 
 <script src="assets/js/bootstrap.js"></script>
+<script type="text/javascript">
+  
+</script>
 </body>
 </html>

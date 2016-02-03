@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Kwitansi New - Aplikasi Keuangan PT. Putra Bahari Mandiri</title>
+<title>Kas Bank - Pembayaran - Aplikasi Keuangan PT. Putra Bahari Mandiri</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -111,102 +111,47 @@
   <div class="main-inner">
     <div class="container">
       <div class="row">
-        <div class="span2">
-          <div class="widget">
-            <div class="widget-header"> <i class="icon-bookmark"></i>
-              <h3>Shortcuts</h3>
-            </div>
-            <!-- /widget-header -->
-            <div class="widget-content">
-              <div class="shortcuts"> 
-                <a href="pembelian_list.html" class="shortcut" style="width: 100%;">
-                  <i class="shortcut-icon icon-list-alt"></i>
-                  <span class="shortcut-label">List</span> 
-                </a>
-              </div>
-              <!-- /shortcuts -->
-              <div class="shortcuts"> 
-                <a href="pembelian_new.html" class="shortcut" style="width: 100%;">
-                  <i class="shortcut-icon icon-file"></i>
-                  <span class="shortcut-label">New</span> 
-                </a>
-              </div>
-              <!-- /shortcuts --> 
-              <div class="shortcuts"> 
-                <a href="pembelian_grafik.html" class="shortcut" style="width: 100%;">
-                  <i class="shortcut-icon icon-bar-chart"></i>
-                  <span class="shortcut-label">Grafik</span> 
-                </a>
-              </div>
-              <!-- /shortcuts -->
-            </div>
-            <!-- /widget-content --> 
-          </div>
-          <!-- /widget -->
-        </div>
-        <!-- /span2 -->
-        <div class="span10">
-          <div class="widget">
+        <div class="span12">
+          <div class="widget widget-table action-table">
             <div class="widget-header"> <i class="icon-th-list"></i>
-              <h3>Kwitansi</h3>
+              <h3>Buku Bank</h3>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
-              <form action="#" method="post">
-                
-                <div class="form-fields">
-                  
-                  <div class="field">
-                    <label for="name">No:</label>
-                    <input id="name" name="name" value="" placeholder="No" />
-                  </div> <!-- /field -->
-                  
-                  <div class="field">
-                    <label for="address">Diterima Dari</label>  
-                    <textarea id="address" name="address" value="" placeholder="Diterima Dari"></textarea>
-                  </div> <!-- /field -->
-                  
-                  
-                  <div class="field">
-                    <label for="phone">Jumlah</label>
-                    <input id="phone" name="phone" value="" placeholder="Jumlah"/>
-                  </div> <!-- /field -->
-                  
-                  <div class="field">
-                    <label for="email">Untuk Pembayaran:</label>
-                    <input type="email" id="email" name="email" value="" placeholder="Untuk Pembayaran"/>
-                  </div> <!-- /field -->
-
-                  <div class="field">
-                    <label for="note">Rekening Tujuan Pembayaran</label>
-                    <label class="radio-inline"><input type="radio" name="optradio">Bank BCA</label>
-                    <label class="radio-inline"><input type="radio" name="optradio">Bank BNI</label>
-                    <label class="radio-inline"><input type="radio" name="optradio">Bank Mandiri</label>
-                  </div> <!-- /field -->
-
-                  <div class="field">
-                    <label for="email">Upload File:</label>
-                    <label for="exampleInputFile">File input</label>
-                    <input type="file" class="form-control-file" id="exampleInputFile">
-                    <small class="text-muted">Upload hardcopy kwitansi.</small>
-                  </div> <!-- /field -->
-
-                  <div class="form-actions">
-                  <div class="pull-right">
-                    <button type="reset" class="button btn btn-default btn-large">Reset</button>
-                    <button class="button btn btn-primary btn-large"><a href="print_kwitansi.html"></a> Submit</button>
-                  </div>
-                </div> <!-- .actions -->
-                  
-                </div> <!-- /form-fields -->
-                
-              </form>
+              <table class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <th width="30"> No. </th>
+                    <th> Tanggal </th>
+                    <th> No. Sumber </th>
+                    <th> Keterangan </th>
+                    <th> Pemasukan </th>
+                    <th> Pengeluaran </th>
+                    <th> Saldo </th>
+                    <th> Terekonsiliasi </th>
+                    <th class="td-actions"> </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> 1 </td>
+                    <td> 17 Agustus 2015 </td>
+                    <td> 1101-101 </td>
+                    <td> Biaya Sewa Alat Proyek </td>
+                    <td> Rp 500.000 </td>
+                    <td> - </td>
+                    <td> Rp. 1.000.000 </td>
+                    <td> - </td>
+                    <td class="td-actions"><a href="vendor_edit.html" class="btn btn-small btn-success" title="edit"><i class="btn-icon-only icon-pencil"> </i></a><a href="vendor_list_submit_delete.html" class="btn btn-danger btn-small" title="delete"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <!-- /widget-content --> 
           </div>
           <!-- /widget -->
         </div>
-        <!-- /span10 -->
+        <!-- /span12 -->
       </div>
       <!-- /row --> 
     </div>

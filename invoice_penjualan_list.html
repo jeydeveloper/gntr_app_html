@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Invoice New - Aplikasi Keuangan PT. Putra Bahari Mandiri</title>
+<title>List Invoice Penjualan - Aplikasi Keuangan PT. Putra Bahari Mandiri</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -14,7 +14,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link href="assets/css/pages/dashboard.css" rel="stylesheet">
 <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet">
-<link href="assets/css/pages/form.css" rel="stylesheet" type="text/css">
 <link href="assets/css/custom.css" rel="stylesheet">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -119,14 +118,14 @@
             <!-- /widget-header -->
             <div class="widget-content">
               <div class="shortcuts"> 
-                <a href="invoice_list.html" class="shortcut" style="width: 100%;">
+                <a href="#" class="shortcut" style="width: 100%;">
                   <i class="shortcut-icon icon-list-alt"></i>
                   <span class="shortcut-label">List</span> 
                 </a>
               </div>
               <!-- /shortcuts -->
               <div class="shortcuts"> 
-                <a href="invoice_new.html" class="shortcut" style="width: 100%;">
+                <a href="invoice_penjualan_new.html" class="shortcut" style="width: 100%;">
                   <i class="shortcut-icon icon-file"></i>
                   <span class="shortcut-label">New</span> 
                 </a>
@@ -137,131 +136,116 @@
           </div>
           <!-- /widget -->
         </div>
-        <!-- /span2 -->
-        <div class="span5">
-          <div class="widget">
+        <!-- /span4 -->
+        <div class="span10">
+          <div class="widget widget-table action-table">
             <div class="widget-header"> <i class="icon-th-list"></i>
-              <h3>I N V O I C E</h3>
+              <h3>List Invoice Penjualan</h3>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
-              <form action="#" method="post">
-                
-                <div class="form-fields">
-                  
-                  <div class="field">
-                    <label for="name">Invoice No:</label>
-                    <input id="name" name="name" value="" placeholder="No." />
-                  </div> <!-- /field -->
-                  
-                  <div class="field">
-                    <label for="address">Tanggal</label>  
-                    <input id="name" name="name" value="" placeholder="Tanggal" />
-                  </div> <!-- /field -->
-                  
-                  
-                  <div class="field">
-                    <label for="phone">WO No:</label>
-                    <input id="phone" name="phone" value="" placeholder="WO No"/>
-                  </div> <!-- /field -->
-                  
-                  <div class="field">
-                    <label for="email">Tanggal:</label>
-                    <input type="email" id="email" name="email" value="" placeholder="Tanggal"/>
-                  </div> <!-- /field -->
-
-                  <div class="field">
-                    <label for="note">Penawaran WO</label>
-                    <input type="email" id="email" name="email" value="" placeholder="Penawaran WO"/>
-                  </div> <!-- /field -->
-                  
-                </div> <!-- /form-fields -->
-                
-              </form>
+              <table class="table table-striped table-bordered" id="fixTable" style="width:2000px;">
+                <thead>
+                  <tr>
+                    <th> No. </th>
+                    <th> No. Invoice </th>
+                    <th> Tanggal </th>
+                    <th> No. WO</th>
+                    <th> Tanggal </th>
+                    <th> No. Penawaran </th>
+                    <th> Ditujukan Ke </th>
+                    <th> Deskripsi </th>
+                    <th> Total </th>
+                    <th> PPh 2% </th>
+                    <th> PPn 10% </th>
+                    <th> Total Tagihan</th>
+                    <th class="td-actions"> Actions </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> 1.</td>
+                    <td> 0103/INV-XII/2015 </td>
+                    <td> 21 Desember 2015</td>
+                    <td> PO-0660-JIND/PBM-001</td>
+                    <td> 07 Desember 2015</td>
+                    <td> SPH-0105/SAB-IX/2015</td>
+                    <td> PT. JGC Indonesia</td>
+                    <td> Sewa 1 Unit Backhoe Loader, 1 Unit Vibro & Dump Truck 7m3 + Mob Demob</td>
+                    <td> Rp 50.800.000</td>
+                    <td> Rp 1.016.000</td>
+                    <td> Rp 5.080.000</td>
+                    <td> Rp 54.864.000</td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                  <tr>
+                    <td> 2.</td>
+                    <td> 0103/INV-XII/2015 </td>
+                    <td> 21 Desember 2015</td>
+                    <td> PO-0660-JIND/PBM-001</td>
+                    <td> 07 Desember 2015</td>
+                    <td> SPH-0105/SAB-IX/2015</td>
+                    <td> PT. JGC Indonesia</td>
+                    <td> Sewa 1 Unit Backhoe Loader, 1 Unit Vibro & Dump Truck 7m3 + Mob Demob</td>
+                    <td> Rp 50.800.000</td>
+                    <td> Rp 1.016.000</td>
+                    <td> Rp 5.080.000</td>
+                    <td> Rp 54.864.000</td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                  <tr>
+                    <td> 3.</td>
+                    <td> 0103/INV-XII/2015 </td>
+                    <td> 21 Desember 2015</td>
+                    <td> PO-0660-JIND/PBM-001</td>
+                    <td> 07 Desember 2015</td>
+                    <td> SPH-0105/SAB-IX/2015</td>
+                    <td> PT. JGC Indonesia</td>
+                    <td> Sewa 1 Unit Backhoe Loader, 1 Unit Vibro & Dump Truck 7m3 + Mob Demob</td>
+                    <td> Rp 50.800.000</td>
+                    <td> Rp 1.016.000</td>
+                    <td> Rp 5.080.000</td>
+                    <td> Rp 54.864.000</td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                  <tr>
+                    <td> 4.</td>
+                    <td> 0103/INV-XII/2015 </td>
+                    <td> 21 Desember 2015</td>
+                    <td> PO-0660-JIND/PBM-001</td>
+                    <td> 07 Desember 2015</td>
+                    <td> SPH-0105/SAB-IX/2015</td>
+                    <td> PT. JGC Indonesia</td>
+                    <td> Sewa 1 Unit Backhoe Loader, 1 Unit Vibro & Dump Truck 7m3 + Mob Demob</td>
+                    <td> Rp 50.800.000</td>
+                    <td> Rp 1.016.000</td>
+                    <td> Rp 5.080.000</td>
+                    <td> Rp 54.864.000</td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                  <tr>
+                    <td> 5.</td>
+                    <td> 0103/INV-XII/2015 </td>
+                    <td> 21 Desember 2015</td>
+                    <td> PO-0660-JIND/PBM-001</td>
+                    <td> 07 Desember 2015</td>
+                    <td> SPH-0105/SAB-IX/2015</td>
+                    <td> PT. JGC Indonesia</td>
+                    <td> Sewa 1 Unit Backhoe Loader, 1 Unit Vibro & Dump Truck 7m3 + Mob Demob</td>
+                    <td> Rp 50.800.000</td>
+                    <td> Rp 1.016.000</td>
+                    <td> Rp 5.080.000</td>
+                    <td> Rp 54.864.000</td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <!-- /widget-content --> 
           </div>
           <!-- /widget -->
         </div>
-        <!-- /span5 -->
-        <div class="span5">
-          <div class="widget">
-            <div class="widget-header"> <i class="icon-th-list"></i>
-              <h3>Form</h3>
-            </div>
-            <!-- /widget-header -->
-            <div class="widget-content">
-              <form action="#" method="post">
-                
-                <div class="form-fields">
-                  
-                  <div class="field">
-                    <label for="name">No:</label>
-                    <input id="name" name="name" value="" placeholder="No" />
-                  </div> <!-- /field -->
-                  
-                  <div class="field">
-                    <label for="address">Deskripsi:</label>  
-                    <textarea id="address" name="address" value="" placeholder="Deskripsi"></textarea>
-                  </div> <!-- /field -->
-                  
-                  
-                  <div class="field">
-                    <label for="phone">Volume:</label>
-                    <input id="phone" name="phone" value="" placeholder="Volume"/>
-                  </div> <!-- /field -->
-                  
-                  <div class="field">
-                    <label for="email">Satuan:</label>
-                    <input type="email" id="email" name="email" value="" placeholder="Satuan"/>
-                  </div> <!-- /field -->
-                  
-                  <div class="field">
-                    <label for="note">Harga Satuan:</label>
-                    <input type="email" id="email" name="email" value="" placeholder="Harga Satuan"/>
-                  </div> <!-- /field -->
-
-                  <div class="field">
-                    <label for="note">Jumlah Harga:</label>
-                    <input type="email" id="email" name="email" value="" placeholder="Jumlah Harga"/>
-                  </div> <!-- /field -->
-
-                  <div class="field">
-                    <label for="note">Total:</label>
-                    <input type="email" id="email" name="email" value="" placeholder="Total"/>
-                  </div> <!-- /field -->
-
-                  <div class="field">
-                    <label><input type="checkbox"> PPh 2% </label>
-                    <label><input type="checkbox"> PPN 10% </label>
-                  </div> <!-- /field -->
-
-                  <div class="field">
-                    <label for="note">Total Tagihan:</label>
-                    <input type="email" id="email" name="email" value="" placeholder="Total Tagihan"/>
-                  </div> <!-- /field -->
-
-                  <div class="field">
-                    <label for="note">Terbilang:</label>
-                    <input type="email" id="email" name="email" value="" placeholder="Terbilang"/>
-                  </div> <!-- /field -->
-  
-                </div> <!-- /form-fields -->
-                
-                <div class="form-actions">
-                  <div class="pull-right">
-                    <button type="reset" class="button btn btn-default btn-large">Reset</button>
-                    <button class="button btn btn-primary btn-large"><a href="print_invoice.html"></a> Submit</button>
-                  </div>
-                </div> <!-- .actions -->
-                
-              </form>
-            </div>
-            <!-- /widget-content --> 
-          </div>
-          <!-- /widget -->
-        </div>
-        <!-- /span5 -->
+        <!-- /span8 -->
       </div>
       <!-- /row --> 
     </div>
@@ -274,7 +258,7 @@
   <div class="footer-inner">
     <div class="container">
       <div class="row">
-        <div class="span12"> &copy; 2015 <a href="http://www.egrappler.com/">Web Application</a>. </div>
+        <div class="span12"> &copy; 2015 <a href="http://localhost/">Web Application</a>. </div>
         <!-- /span12 --> 
       </div>
       <!-- /row --> 
@@ -289,5 +273,11 @@
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="assets/js/jquery-1.7.2.min.js"></script> 
 <script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/tableHeadFixer.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#fixTable").tableHeadFixer({"head" : false, "left" : 1}); 
+  });
+</script>
 </body>
 </html>

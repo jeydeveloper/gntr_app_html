@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>List Penawaran Penjualan - Aplikasi Keuangan PT. Putra Bahari Mandiri</title>
+<title>New Permintaan Penjualan - Aplikasi Keuangan PT. Putra Bahari Mandiri</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link href="assets/css/pages/dashboard.css" rel="stylesheet">
 <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet">
+<link href="assets/css/pages/form.css" rel="stylesheet" type="text/css">
 <link href="assets/css/custom.css" rel="stylesheet">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -118,14 +119,14 @@
             <!-- /widget-header -->
             <div class="widget-content">
               <div class="shortcuts"> 
-                <a href="#" class="shortcut" style="width: 100%;">
+                <a href="permintaan_penjualan_list.html" class="shortcut" style="width: 100%;">
                   <i class="shortcut-icon icon-list-alt"></i>
                   <span class="shortcut-label">List</span> 
                 </a>
               </div>
               <!-- /shortcuts -->
               <div class="shortcuts"> 
-                <a href="penawaran_penjualan_new.html" class="shortcut" style="width: 100%;">
+                <a href="#" class="shortcut" style="width: 100%;">
                   <i class="shortcut-icon icon-file"></i>
                   <span class="shortcut-label">New</span> 
                 </a>
@@ -138,50 +139,87 @@
         </div>
         <!-- /span4 -->
         <div class="span10">
-          <div class="widget widget-table action-table">
+          <div class="widget">
             <div class="widget-header"> <i class="icon-th-list"></i>
-              <h3>List Penawaran Penjualan</h3>
-              <div style="float:right; margin-top:5px; margin-right:5px;">
-                <input type="checkbox">Terproses
-                <input type="checkbox">Ditutup
-                <input type="checkbox">Menunggu
-                <input type="checkbox">Mengantri
-              </div>
+              <h3>Form Permintaan Penjualan</h3>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
-              <table class="table table-striped table-bordered">
-                <thead>
-                  <tr>
-                    <th> Tanggal </th>
-                    <th> No. Penawaran </th>
-                    <th> No. Pemesan </th>
-                    <th> Dipesan Oleh </th>
-                    <th> Status </th>
-                    <th> Diskon </th>
-                    <th> Pajak </th>
-                    <th> Biaya Kirim </th>
-                    <th> Nilai Faktur </th>
-                    <th> Keterangan</th>
-                    <th class="td-actions">Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td> 2016/01/01 </td>
-                    <td> 1000 </td>
-                    <td> 1001 </td>
-                    <td> PT. Client 1 </td>
-                    <td> Mengantri </td>
-                    <td> - </td>
-                    <td> Rp 180.000 </td>
-                    <td> - </td>
-                    <td> Rp 385.000 </td>
-                    <td> - </td>
-                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
-                  </tr>                
-                </tbody>
-              </table>
+              <form action="#" method="post">
+                
+                <div class="form-fields">
+                  
+                  <div class="field">
+                    <label for="name">Tanggal:</label>
+                    <input type="text" placeholder="Tanggal" />
+                  </div> <!-- /field -->
+                  
+                  <div class="field">
+                    <label for="address">No. SO:</label>  
+                    <input type="text" placeholder="No. SO" />
+                  </div> <!-- /field -->
+                  
+                  
+                  <div class="field">
+                    <label for="phone">No. Pelanggan:</label>
+                    <input type="text" placeholder="No. Pelanggan"/>
+                  </div> <!-- /field -->
+                  
+                  <div class="field">
+                    <label for="email">Nama Pelanggan:</label>
+                    <input type="text" placeholder="Nama Pelanggan"/>
+                  </div> <!-- /field -->
+                  
+                  <div class="field">
+                    <label for="email">Status:</label>
+                    <input type="text" placeholder="Status"/>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="email">No. PO:</label>
+                    <input type="text" placeholder="No. PO"/>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="email">Diskon:</label>
+                    <input type="text" placeholder="Diskon"/>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="email">Pajak:</label>
+                    <input type="text" placeholder="Pajak"/>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="email">Biaya Kirim:</label>
+                    <input type="text" placeholder="Biaya Kirim"/>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="email">Nilai Faktur:</label>
+                    <input type="text" placeholder="Nilai Faktur"/>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="email">Uang Muka:</label>
+                    <input type="text" placeholder="Uang Muka"/>
+                  </div> <!-- /field -->
+
+                  <div class="field">
+                    <label for="email">Keterangan:</label>
+                    <input type="text" placeholder="Keterangan"/>
+                  </div> <!-- /field -->
+                  
+                </div> <!-- /form-fields -->
+                
+                <div class="form-actions">
+                  <div class="pull-right">
+                    <button type="reset" class="button btn btn-default btn-large">Reset</button>
+                    <button class="button btn btn-primary btn-large">Submit</button>
+                  </div>
+                </div> <!-- .actions -->
+                
+              </form>
             </div>
             <!-- /widget-content --> 
           </div>
@@ -200,7 +238,7 @@
   <div class="footer-inner">
     <div class="container">
       <div class="row">
-        <div class="span12"> &copy; 2015 <a href="http://localhost/">Web Application</a>. </div>
+        <div class="span12"> &copy; 2015 <a href="http://www.egrappler.com/">Web Application</a>. </div>
         <!-- /span12 --> 
       </div>
       <!-- /row --> 

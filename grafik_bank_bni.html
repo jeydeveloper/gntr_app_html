@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Aplikasi Keuangan</title>
+    <title>Kas Bank BNI- Aplikasi Keuangan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -107,82 +107,33 @@
         <div class="main-inner">
             <div class="container">
                 <div class="row">
-                    <div class="span6">
+                    <div class="span12">
                         <div class="widget">
                             <div class="widget-header">
                                 <i class="icon-bar-chart"></i>
-                                <h3>Grafik Pembelian</h3>
+                                <h3>Grafik Buku Bank BNI</h3>
+                                <div style="float:right; margin-top:5px; margin-right:5px;">
+                                    <select name="" id="" onchange="if( this.options[this.selectedIndex].value != '' ) location.href=this.options[this.selectedIndex].value;">
+                                      <option value="http://localhost:8080/gntr_app_html/grafik_bank_bni.html">Bank BNI</option>
+                                      <option value="http://localhost:8080/gntr_app_html/grafik_bank_mandiri.html">Bank Mandiri</option>
+                                      <option value="http://localhost:8080/gntr_app_html/grafik_bank_bca.html">Bank BCA</option>
+                                    </select>
+                                </div>
                             </div>
                             <!-- /widget-header -->
                             <div class="widget-content">
-                                <canvas id="bar-chart" class="chart-holder" width="538" height="250">
+                                <canvas id="bar-chart" class="chart-holder" width="1138" height="350">
                                 </canvas>
                                 <!-- /bar-chart -->
                             </div>
-                            <!-- /widget-content -->
-                        </div>
-                        <!-- /widget -->
-                        <div class="widget">
-                            <div class="widget-header">
-                                <i class="icon-bar-chart"></i>
-                                <h3>Line Chart</h3>
-                            </div>
-                            <!-- /widget-header -->
-                            <div class="widget-content">
-                                <canvas id="area-chart" class="chart-holder" width="538" height="250">
-                                </canvas>
-                                <!-- /line-chart -->
-                            </div>
-                            <!-- /widget-content -->
-                        </div>
-                        <!-- /widget -->
-                        <div class="widget">
-                            <div class="widget-header">
-                                <i class="icon-bar-chart"></i>
-                                <h3>Pie Chart</h3>
-                            </div>
-                            <!-- /widget-header -->
-                            <div class="widget-content">
-                                <canvas id="pie-chart" class="chart-holder" width="538" height="250">
-                                </canvas>
-                                <!-- /pie-chart -->
+                            <div style="text-align:right; margin-top:10px;">
+                                <a href="buku_bank_bni.html" class="button btn btn-primary btn-large">Buku Rekening BNI</a>
                             </div>
                             <!-- /widget-content -->
                         </div>
                         <!-- /widget -->
                     </div>
-                    <!-- /span6 -->
-                    <div class="span6">
-                        <div class="widget">
-                            <div class="widget-header">
-                                <i class="icon-bar-chart"></i>
-                                <h3>Donut Chart</h3>
-                            </div>
-                            <!-- /widget-header -->
-                            <div class="widget-content">
-                                <canvas id="donut-chart" class="chart-holder" width="538" height="250">
-                                </canvas>
-                                <!-- /bar-chart -->
-                            </div>
-                            <!-- /widget-content -->
-                        </div>
-                        <!-- /widget -->
-                        <div class="widget">
-                            <div class="widget-header">
-                                <i class="icon-bar-chart"></i>
-                                <h3>A Chart</h3>
-                            </div>
-                            <!-- /widget-header -->
-                            <div class="widget-content">
-                                <canvas id="line-chart" class="chart-holder" width="538" height="250">
-                                </canvas>
-                                <!-- /-chart -->
-                            </div>
-                            <!-- /widget-content -->
-                        </div>
-                        <!-- /widget -->
-                    </div>
-                    <!-- /span6 -->
+                    <!-- /span12 -->
                 </div>
                 <!-- /row -->
             </div>
@@ -271,69 +222,19 @@
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/base.js"></script>
     <script>
-        var doughnutData = [
-                {
-                    value: 30,
-                    color: "#F7464A"
-                },
-                {
-                    value: 50,
-                    color: "#46BFBD"
-                },
-                {
-                    value: 100,
-                    color: "#FDB45C"
-                },
-                {
-                    value: 40,
-                    color: "#949FB1"
-                },
-                {
-                    value: 120,
-                    color: "#4D5360"
-                }
-
-            ];
-
-        var myDoughnut = new Chart(document.getElementById("donut-chart").getContext("2d")).Doughnut(doughnutData);
-
-
-        var lineChartData = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [
-                {
-                    fillColor: "rgba(220,220,220,0.5)",
-                    strokeColor: "rgba(220,220,220,1)",
-                    pointColor: "rgba(220,220,220,1)",
-                    pointStrokeColor: "#fff",
-                    data: [65, 59, 90, 81, 56, 55, 40]
-                },
-                {
-                    fillColor: "rgba(151,187,205,0.5)",
-                    strokeColor: "rgba(151,187,205,1)",
-                    pointColor: "rgba(151,187,205,1)",
-                    pointStrokeColor: "#fff",
-                    data: [28, 48, 40, 19, 96, 27, 100]
-                }
-            ]
-
-        }
-
-        var myLine = new Chart(document.getElementById("area-chart").getContext("2d")).Line(lineChartData);
-
 
         var barChartData = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "Octobre", "November", "December"],
             datasets: [
                 {
                     fillColor: "rgba(220,220,220,0.5)",
                     strokeColor: "rgba(220,220,220,1)",
-                    data: [65, 59, 90, 81, 56, 55, 40]
+                    data: [65, 59, 90, 81, 56, 55, 40, 100, 100, 80, 90, 40]
                 },
                 {
                     fillColor: "rgba(151,187,205,0.5)",
                     strokeColor: "rgba(151,187,205,1)",
-                    data: [28, 48, 40, 19, 96, 27, 100]
+                    data: [28, 48, 40, 19, 96, 27, 100, 50, 50, 40, 70, 50]
                 }
             ]
 
@@ -341,51 +242,7 @@
 
 var myLine = new Chart(document.getElementById("bar-chart").getContext("2d")).Bar(barChartData);
 
-var pieData = [
-                {
-                    value: 30,
-                    color: "#F38630"
-                },
-                {
-                    value: 50,
-                    color: "#E0E4CC"
-                },
-                {
-                    value: 100,
-                    color: "#69D2E7"
-                }
 
-            ];
-
-                var myPie = new Chart(document.getElementById("pie-chart").getContext("2d")).Pie(pieData);
-
-                var chartData = [
-            {
-                value: Math.random(),
-                color: "#D97041"
-            },
-            {
-                value: Math.random(),
-                color: "#C7604C"
-            },
-            {
-                value: Math.random(),
-                color: "#21323D"
-            },
-            {
-                value: Math.random(),
-                color: "#9D9B7F"
-            },
-            {
-                value: Math.random(),
-                color: "#7D4F6D"
-            },
-            {
-                value: Math.random(),
-                color: "#584A5E"
-            }
-        ];
-                var myPolarArea = new Chart(document.getElementById("line-chart").getContext("2d")).PolarArea(chartData);
     </script>
 </body>
 </html>

@@ -16,6 +16,9 @@
 <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet">
 <link href="assets/css/pages/form.css" rel="stylesheet" type="text/css">
 <link href="assets/css/custom.css" rel="stylesheet">
+<style type="text/css">
+.filter{display: none;}
+</style>
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -133,16 +136,28 @@
                       <div class="accordion-inner">
                         <div>
                           <i class="shortcut-icon icon-tag"></i>
-                          <span class="shortcut-label"><a href="#">Neraca</a></span><br/>
+                          <span class="shortcut-label"><a href="#" class="el-fil">Neraca</a><br/></span>
+                          <div class="filter">
+                            <input placeholder="Tanggal Mulai" name="" id="" value="" /> - <input placeholder="Tanggal Akhir" name="" id="" value="" /> <input type="submit" value="Submit" />
+                          </div>
 
                           <i class="shortcut-icon icon-tag"></i>
-                          <span class="shortcut-label"><a href="#">Laba/Rugi</a></span><br/>
+                          <span class="shortcut-label"><a href="#" class="el-fil">Laba/Rugi</a><br/></span>
+                          <div class="filter">
+                            <input placeholder="Tanggal Mulai" name="" id="" value="" /> - <input placeholder="Tanggal Akhir" name="" id="" value="" /> <input type="submit" value="Submit" />
+                          </div>
 
                           <i class="shortcut-icon icon-tag"></i>
-                          <span class="shortcut-label"><a href="#">Grafik Perbandingan Akun</a></span><br/>
+                          <span class="shortcut-label"><a href="#" class="el-fil">Grafik Perbandingan Akun</a><br/></span>
+                          <div class="filter">
+                            <input placeholder="Tanggal Mulai" name="" id="" value="" /> - <input placeholder="Tanggal Akhir" name="" id="" value="" /> <input type="submit" value="Submit" />
+                          </div>
 
                           <i class="shortcut-icon icon-tag"></i>
-                          <span class="shortcut-label"><a href="#">Grafik Pendapatan dan Beban</a></span><br/>
+                          <span class="shortcut-label"><a href="#" class="el-fil">Grafik Pendapatan dan Beban</a><br/></span>
+                          <div class="filter">
+                            <input placeholder="Tanggal Mulai" name="" id="" value="" /> - <input placeholder="Tanggal Akhir" name="" id="" value="" /> <input type="submit" value="Submit" />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -228,5 +243,20 @@
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="assets/js/jquery-1.7.2.min.js"></script> 
 <script src="assets/js/bootstrap.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.el-fil').click(function(e){
+      e.preventDefault();
+      var me = $(this);
+      var nxt = me.parent().next();
+      if(nxt.is(':visible')) {
+        nxt.hide();
+      } else {
+        $('.filter').hide();
+        nxt.show()
+      }
+    })
+  })
+</script>
 </body>
 </html>

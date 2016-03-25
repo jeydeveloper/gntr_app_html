@@ -1,0 +1,322 @@
+<html>
+<head>
+    <style type="text/css" media="all">
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        @page {
+            size: A4 portrait; /* can use also 'landscape' for orientation */
+            margin: 0.2in;
+            border: thin solid black;
+            padding: 0.2inem;
+
+            @bottom-center {
+                content: element(footer);
+            }
+
+            @top-center {
+                content: element(header);
+            }
+        }
+
+        /*body{margin-top: 10px;}*/
+
+        #page-header {
+            display: block;
+            position: running(header);
+        }
+
+        #page-footer {
+            display: block;
+            position: running(footer);
+        }
+
+        .page-number:before {
+            content: counter(page); 
+        }
+
+        .page-count:before {
+            content: counter(pages);  
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            /*border: 1px solid black;*/
+            /*font-size: 12px;*/
+        }
+
+        div, tr {
+            -webkit-print-color-adjust: exact; 
+        }
+
+        p, ul, ol, h3 {
+            margin: 0;
+        }
+
+        .tbl-blue{color:blue;}
+
+        hr{color:blue;border:solid 2px;}
+
+        /*th,td {vertical-align: top;}*/
+    </style>
+</head>
+
+<body>
+    <div id="page-content">
+        <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+    <tbody>
+        <tr>
+            <td>
+            <table border="1" cellpadding="0" cellspacing="0" style="width:100%">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">
+                        <p>&nbsp;</p>
+
+                        <p><strong>ABC</strong></p>
+
+                        <p><strong>Neraca</strong></p>
+
+                        <p><strong>Per 31 Desember 20xx</strong></p>
+
+                        <p>&nbsp;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <table border="1" cellpadding="0" cellspacing="0" style="width:100%;border:0;">
+                            <tbody>
+                                <tr>
+                                    <td style="width:50%;border-right: solid 1px;">
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: center;"><strong>Aktifa</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Aktifa Lancar</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>Kas</td>
+                                                <td style="text-align: right;">450</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Persediaan</td>
+                                                <td style="text-align: right;">600</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Piutang Dagang</td>
+                                                <td style="text-align: right;">550</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>Total Aktifa Lancar</td>
+                                                <td style="text-align: right;font-weight:bold;"><span style="border-top:solid 1px;border-bottom:solid 1px;">1.600</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Aktifa Tidak Lancar</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>Kendaraan</td>
+                                                <td style="text-align: right;">2.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bangunan</td>
+                                                <td style="text-align: right;">5.000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>Total Aktifa Tidak Lancar</td>
+                                                <td style="text-align: right;font-weight:bold;"><span style="border-top:solid 1px;border-bottom:solid 1px;">7.000</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Total Aktifa</strong></td>
+                                                <td style="text-align: right;font-weight:bold;"><span style="border-top:solid 1px;border-bottom:solid 1px;">8.600</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+                                    </td>
+                                    <td style="width:50%;">
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: center;"><strong>Pasiva</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Kewajiban Jangka Pendek</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>Utang Dagang</td>
+                                                <td style="text-align: right;">600</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Utang Pajak</td>
+                                                <td style="text-align: right;">250</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>Total Kewajiban Jangka Pendek</td>
+                                                <td style="text-align: right;font-weight:bold;"><span style="border-top:solid 1px;border-bottom:solid 1px;">850</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Kewajiban Jangka Panjang</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>Wesel Bayar</td>
+                                                <td style="text-align: right;">2.250</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>Total Kewajiban Jangka Panjang</td>
+                                                <td style="text-align: right;font-weight:bold;"><span style="border-top:solid 1px;border-bottom:solid 1px;">2.250</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Modal Pemilik</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>Modal Tn. Takur</td>
+                                                <td style="text-align: right;">5.500</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <table border="0" cellpadding="5" cellspacing="5" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Total Kewajiban dan Modal</strong></td>
+                                                <td style="text-align: right;font-weight:bold;"><span style="border-top:solid 1px;border-bottom:solid 1px;">8.600</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+    </div>
+</body>
+</html>

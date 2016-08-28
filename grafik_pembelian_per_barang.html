@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <script type="text/javascript">
+    window.onload = function () {
+      var chart = new CanvasJS.Chart("chartContainer",
+      {
+        title: {
+          text: "Grafik Pembelian per Barang"
+        },
+        animationEnabled: true,
+        animationDuration: 2000,
+        legend: {
+          verticalAlign: "bottom",
+          horizontalAlign: "center"
+        },
+        data: [
+        {
+          indexLabelFontSize: 20,
+          indexLabelFontFamily: "Monospace",
+          indexLabelFontColor: "darkgrey",
+          indexLabelLineColor: "darkgrey",
+          indexLabelPlacement: "outside",
+          type: "pie",
+          showInLegend: true,
+          toolTipContent: "{y} - <strong>#percent%</strong>",
+          dataPoints: [
+            { y: 4181563, legendText: "Abu Batu", indexLabel: "Abu Batu" },
+            { y: 2175498, legendText: "Alumunium", indexLabel: "Alumunium" },
+            { y: 3125844, legendText: "Armatur", exploded: true, indexLabel: "Armatur" },
+            { y: 1727161, legendText: "Jasa Manpower", indexLabel: "Jasa Manpower" },
+            { y: 4303364, legendText: "Besi Stenleess", indexLabel: "Besi Stenleess" },
+            { y: 1717786, legendText: "Batu Bata Merah Lokal", indexLabel: "Batu Bata Merah Lokal" }
+          ]
+        }
+        ]
+      });
+      chart.render();
+    }
+  </script>
+  <script src="assets/js/charts/canvasjs.js"></script>
+  <title>Grafik Penjualan per Barang</title>
+</head>
+<body>
+  <div id="chartContainer" style="height: 400px; width: 100%;"></div>
+</body>
+</html>
